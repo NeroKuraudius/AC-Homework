@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.game-title {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+}
+
+.game-img {
+  height: 40px;
+  width: 40px;
+  margin: 3px
+}
+
+.game-name {
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 15px 1px 5px
+}
+
+.game-data {
+  font-family: Nunito;
+  text-align: right;
+  padding: 15px 15px 0 0
+}
+
+.scores {
+  color: steelblue;
+}
+
+#cards-area {
+  /* flex預設主要軸為row */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  /* card in the cards-area */
+  /* ※flex = flex-basis, flex-grow, flex-shrink */
+  flex: 7% 0 1;
+  height: 8vw;
+  border: 2px solid lightgray;
+  margin: 2px;
+  /* inside the card */
+  display: flex;
+  /* ※設定主要軸為cloumn(次要軸變成row) */
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card img {
+  max-width: 30%;
+  /* ※ align-self:center 會將物件置於主要軸與次要軸之交叉點 */
+  align-self: center;
+}
+
+.card p {
+  margin: 3px;
+  font-size: 14px;
+}
+
+/* card內的<p>有兩個，只要設定第二個 */
+.card p:last-child {
+  transform: rotate(180deg);
+}
+
+.back {
+  background: url('https://assets-lighthouse.alphacamp.co/uploads/image/file/9222/ExportedContentImage_00.png');
+  background-size: cover;
+}
+
+.paired {
+  background-color: #dae0e3;
+}
+
+@keyframes wrongAnimation {
+  100% {
+    border: 2px solid darkred
+  }
+}
+
+.wrong {
+  animation: wrongAnimation 0.2s;
+  animation-iteration-count: 5;
+}
+
+.achieved {
+  width: 120%;
+  position: absolute;
+  z-index: 5;
+  text-align: center;
+  top: 30%;
+  background-color: rgba(180, 164, 236, 0.8);
+  font-size: 30px;
+  font-weight: bold;
+
+}
