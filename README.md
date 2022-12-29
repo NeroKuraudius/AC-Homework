@@ -1,9 +1,9 @@
-#h2 As the title, these are my homeworks.
-#h2 Welcome to read my code and try to play a while with them.
-#h2 And if you have any good advice for me, I'll embrace it.
+##h2 As the title, these are my homeworks.
+##h2 Welcome to read my code and try to play a while with them.
+##h2 And if you have any good advice for me, I'll embrace it.
 
 
-#h3 There'are some tips about those homeworks:
+###h3 There'are some tips about those homeworks:
 
 **1.Palette:**
 -Type the number between 0~255 in three input-rows left, it'll turn into the HEX colors.
