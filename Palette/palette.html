@@ -1,0 +1,35 @@
+<header></header>
+<link rel="stylesheet" href="palette.css">
+</link>
+
+<body>
+  <div class="container">
+    <div class="input">
+      <h3 class="input-title">RGB</h3>
+      <div class="input-color">
+        <div class="colors">
+          <h4 class="red">R：</h4>
+          <input class="red-input" oninput="colorPreview()">
+          <div class="red-block"></div>
+        </div>
+        <div class="colors">
+          <h4 class="green">G：</h4>
+          <input class="green-input" oninput="colorPreview()">
+          <div class="green-block"></div>
+        </div>
+        <div class="colors">
+          <h4 class="blue">B：</h4>
+          <input class="blue-input" oninput="colorPreview()">
+          <div class="blue-block"></div>
+        </div>
+      </div>
+      <button id="dangerbtn">Convert</button>
+    </div>
+    <div class="output">
+      <h3 class="output-title">HEX</h3>
+      <input class="output-hex">
+      <div class="output-color"></div>
+    </div>
+  </div>
+  <script src="palette.js"></script>
+</body>

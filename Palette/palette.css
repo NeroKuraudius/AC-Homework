@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif, serif, Arial;
+}
+
+.container {
+  display: flex;
+  text-align: left;
+  justify-content: space-evenly;
+}
+
+.colors {
+  max-height: 30px;
+  display: flex;
+  margin: 8px 0;
+  padding: 4px;
+  align-items: center;
+}
+
+.red-block {
+  height: 30px;
+  width: 30px;
+  background-color: #ff0000;
+  margin: 0 8px;
+}
+
+.green-block {
+  height: 30px;
+  width: 30px;
+  background-color: #00ff00;
+  margin: 0 8px;
+}
+
+.blue-block {
+  height: 30px;
+  width: 30px;
+  background-color: #0000ff;
+  margin: 0 8px;
+}
+
+#dangerbtn {
+  height: 30px;
+  width: 70px;
+  margin: 10px 0 0 27px;
+  background-color: #2f4cde;
+  border: 1px solid #2f4cde;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+#dangerbtn:hover {
+  background-color: white;
+  border: 1px solid #2f4cde;
+  color: #2f4cde;
+}
+
+.output-color {
+  height: 100px;
+  width: 100px;
+  margin: 30px 0 0 0;
+  background-color: #cccccc;
+}
